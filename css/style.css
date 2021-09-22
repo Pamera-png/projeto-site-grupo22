@@ -1,0 +1,337 @@
+/* Geral */
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #262523;
+	margin: 0;
+}
+
+/* NAVEGAÇÃO */
+
+h1,h2,h3{
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.botao{
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #014040;
+	font-size: .9em;
+	border-radius: 7px;
+	
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #94f2f2;
+
+}
+
+nav > a {
+	text-decoration: none;
+	color: #014040;
+	font-weight: bold;
+	font-size: 28px;
+	font-family: Pacifico, serif;
+	
+}
+
+nav ul{
+	
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	
+}
+
+nav ul li{
+	text-align: center;
+	width: 100%;
+	padding: 1%;
+	list-style-type: none;	
+	
+}
+
+nav ul li a{ 
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #014040;
+}
+
+nav ul :hover { 
+    background-color: #98e7e6;
+}
+
+/* Cabeçalho */
+
+header {
+	background-image:url('../img/fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding:20px;
+}
+
+header p{
+	margin-bottom: 2em;
+}
+
+/* Sobre */
+#sobre{
+    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom-width: 10px;
+	
+    background-color: #94f2f2;
+	padding-top: 20px;
+}
+
+
+#fonte{
+
+	border-bottom-width: 10px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+
+}
+#fonte img{
+	width: 150px;
+      display: inline-block;
+	  display: flex;
+	flex-direction: column;
+
+  
+
+
+}
+#fonte div{
+	display: flex;
+	flex-direction: column;
+
+	flex-direction: column;
+	align-items: center; 
+}
+
+
+#fonte h2{
+	margin-bottom: 20px;
+}
+
+#sobre div{
+	
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	
+}
+
+
+
+/* Serviços */
+
+#servicos{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+#servicos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+/* Portfolio */
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+#portfolio h2{
+	margin-bottom: 20px;
+}
+#portfolio img p{
+   display: inline-block;
+}
+
+
+
+.equipe-img{
+	margin-top: 0 auto;
+	max-width: 150px;
+border-radius: 50%;
+margin-bottom: 20px;
+align-items: center;
+}
+
+
+
+#Podcast{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+
+}
+
+/* Contato */
+
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* Footer */
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background-color: #014040;
+	color: #f1f1f1;
+}
+
+@media screen and (min-width: 768px){
+	
+	/* Navegação */
+
+	nav{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	nav ul{
+		flex-direction: row;
+		width: 70%;
+	}
+	
+	/* Cabeçalho */
+	
+	header{
+		height: 60vh;
+		justify-content: space-around;
+	}
+	
+	/* Sobre */
+	#sobre{
+		margin-top: 10px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	#sobre1{
+		text-align: center;
+
+
+
+
+	}
+	#sobre h2{
+		text-align: center;
+		width: 100%;
+
+
+	}
+	#sobre div{
+		flex-grow: 1;
+		flex-basis: 150px;
+	
+	}
+	.equipe-img{
+		margin-top: 0 auto;
+		max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+	align-items: center;
+}
+
+	
+	/* Serviços */
+	
+	#servicos{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+	
+	#servicos div{
+		flex-grow: 1;
+		flex-basis: 150px;
+	
+	}
+	
+	/* Portfolio */
+	
+	#portfolio{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	#portfolio h2{
+		width: 100%;
+		text-align: center;
+	}	
+	
+	#portfolio img{
+		width: 33%;
+	}
+	
+	/* Contato */
+	
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	
+	#contato h2,
+	#contato p{
+		width:100%;
+	}
+	#Podcast h2,
+	#Podcast p{
+		width:100%;
+	}	
+
+	
+}
